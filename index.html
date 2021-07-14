@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the fitness club</title>
+    <style>
+        body {
+            color:white;
+            margin: 0px;
+            padding: 0px;
+            background:url('img/man-working-out-2294361.jpg' );
+            background-size: 1700px 1000px;
+            background-repeat: no-repeat;
+            height: 1000px;
+            
+            
+        }
+        .left{
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left:10px;
+            top:25px;
+            width: 80px;
+            /* background-color: wheat; */
+        }
+        .left img{
+            width: 80px;
+            height: 100px;
+
+        }
+        .left div{text-align: center;
+        color: rgb(224, 119, 34);
+        font-size: 17px;}
+        .middle{
+            /* border: 2px solid rgb(31, 151, 95); */
+            display: block;
+            width: 52%;
+            font-style: italic;
+            font-size: 16px;
+            margin: 25px 290px;
+            font-family: cursive;
+            font-size: 20px;
+        }
+        .right{
+            /* border: 2px solid orange; */
+            display: inline-block;
+            position: absolute;
+            right:35px;
+            top:25px; 
+            
+        }
+  
+        .navbar{display: inline-block;
+        justify-self: center;
+        
+        }
+        .navbar li{
+            display:inline-block;
+            justify-content: center;
+        
+
+        }
+        .navbar li a{
+            color:rgb(211, 101, 101);
+            text-decoration: none;
+            margin: 16px;
+        }
+        .navbar li a:hover,.navbar li a.active{
+            text-decoration: underline; 
+            color: gray;
+        }
+        .btn{
+            background-color:black;
+            color: rgb(170, 202, 197);
+            padding: 3px 4px;
+            cursor: pointer;
+            border-radius: 4px;
+            border: 2px solid rgb(124, 78, 78);
+            font-size: 14px;
+            margin: 5px;
+        }
+        .btn:hover{color:wheat;}
+        .container{
+    height: 210px;
+    margin: 130px 45px;
+    padding: 25px;
+    width: 350px;
+    border-radius: 12px;
+    z-index: -1;
+        }
+        .container input{
+            border-radius: 3px;
+            margin: 5px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="left"> <img src="img/d446ce922e02c623c7c8ba59e783e0ed_barbell-clipart-bench-press-bar-picture-110235-barbell-clipart-_905-900.png" alt="">
+            <div>fitness club</div>
+        </div>
+        <div class="middle">
+            <ul class="navbar">
+                <li><a href="">home</a> </li>
+                <li><a href="https://www.menshealth.com/uk/building-muscle/a756325/10-best-bodyweight-exercises-for-men/"> body weight workout</a> </li>
+                <li><a href="https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmicalc.htm"> BMI calculator</a></li>
+                <li><a href="https://www.healthline.com/nutrition/healthy-eating-tips">healty diet</a> </li>
+            </ul></div>
+        <div class="right"><button class="btn">call us</button><button class="btn">mail us</button></div>
+    </header>
+    <div class="container">
+        <h1>fill form for the discount</h1>
+        <form action="">
+            <div class="form-group">
+                <input type="text" placeholder="enter your name">
+            </div>
+            
+            <div class="form-group">
+                <input type="number" placeholder="enter your age">
+            </div>
+            
+            <div class="form-group">
+                <input type="number" placeholder="enter your phone number">
+            </div>
+            
+            <div class="form-group">
+                <input type="text" placeholder="enter your address">
+            </div>
+            <button class="btn">
+                submit
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
